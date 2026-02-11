@@ -36,9 +36,7 @@ const Hero = () => {
 
       {/* Wave curve at the bottom - rises toward the image on the right */}
       <div className="absolute bottom-0 left-0 w-full z-10">
-        <svg viewBox="0 0 1440 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto block" preserveAspectRatio="none">
-          <path d="M0,260 C200,250 500,240 720,250 C900,258 1050,200 1200,100 C1320,40 1400,15 1440,25 L1440,300 L0,300 Z" className="fill-background" />
-        </svg>
+        
       </div>
     </section>;
 };
