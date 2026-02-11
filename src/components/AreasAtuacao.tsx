@@ -13,7 +13,7 @@ const areas = [{
   descricao: "Planejamento e defesa fiscal especializada, protegendo sua empresa contra cobranças indevidas e otimizando a carga tributária com segurança legal."
 }];
 const AreasAtuacao = () => {
-  return <section id="areas" className="-mt-16 pt-4 pb-24 md:pb-32 bg-accent">
+  return <section id="areas" className="py-24 md:py-32 bg-accent">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl text-foreground mb-2 font-normal">Áreas de Atuação</h2>
