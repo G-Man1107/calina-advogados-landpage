@@ -16,7 +16,7 @@ const AreasAtuacao = () => {
   return <section id="areas" className="relative -mt-16 md:-mt-24 pt-0 pb-24 md:pb-32 bg-accent z-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-foreground mb-2 font-normal">Áreas de Atuação</h2>
+          <h2 className="text-3xl text-foreground mb-2 font-normal my-px py-[20px] md:text-5xl">Áreas de Atuação</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
         </div>
 

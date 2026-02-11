@@ -16,7 +16,7 @@ const Sobre = () => {
   return <section id="sobre" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-foreground mb-2 font-normal">Sobre o Escritório</h2>
+          <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] md:text-5xl">Sobre o Escritório</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
           <p className="text-muted-foreground leading-relaxed text-xl">
             O escritório Calina Advogados Associados atua com seriedade e dedicação
