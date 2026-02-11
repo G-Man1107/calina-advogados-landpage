@@ -33,13 +33,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom label */}
-      <div className="relative z-10 pb-6 text-center">
-        <span className="text-primary-foreground/50 text-sm tracking-[0.3em] uppercase font-light">
-          Áreas de Atuação
-        </span>
-        <div className="w-px h-8 bg-primary-foreground/30 mx-auto mt-3" />
-      </div>
 
       {/* Wave curve at the bottom - rises toward the image on the right */}
       <div className="absolute bottom-0 left-0 w-full z-10">
