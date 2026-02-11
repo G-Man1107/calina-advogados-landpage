@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoCalina from "@/assets/logo-calina.jpeg";
+import logoCalina from "@/assets/logo-calina.png";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
