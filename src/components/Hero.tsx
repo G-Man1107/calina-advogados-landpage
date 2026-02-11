@@ -25,7 +25,7 @@ const Hero = () => {
           <p className="mt-4 text-sm text-primary-foreground/60 font-light tracking-wide md:text-xl">
             Entre em contato e fale conosco agora mesmo.
           </p>
-          <a className="mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521966310195%3Ftext%3Dmensagem%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDUmoKutygQtfAzfNyVTskUKetb4w4BmC8zkptJWN_d390WLkzHIUlLWtTv8_aem_AIjdn0LWhEHtm92JIABNyw&e=AT2ceJQGN_SsPpp8Cu08FE3uKSM-1COxfUAOQ-gJCLa9f5e3rwDkG9G6BvsTsri9Fn3arCdbK7U4_p5ih832bil3SRYPeC_xTH3IP5Od2A">
+          <a className="mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl text-center" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521966310195%3Ftext%3Dmensagem%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDUmoKutygQtfAzfNyVTskUKetb4w4BmC8zkptJWN_d390WLkzHIUlLWtTv8_aem_AIjdn0LWhEHtm92JIABNyw&e=AT2ceJQGN_SsPpp8Cu08FE3uKSM-1COxfUAOQ-gJCLa9f5e3rwDkG9G6BvsTsri9Fn3arCdbK7U4_p5ih832bil3SRYPeC_xTH3IP5Od2A">
             Fale agora Conosco no whatsapp  
           </a>
         </div>
