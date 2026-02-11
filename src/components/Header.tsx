@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoCalina from "@/assets/logo-calina.png";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
@@ -14,8 +13,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary-dark/95 backdrop-blur-sm border-b border-primary/20">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
-          <img src={logoCalina} alt="Calina Advogados" className="h-10 md:h-12 w-auto" />
+        <a href="#" className="text-primary-foreground text-xl md:text-2xl tracking-widest uppercase font-light">
+          Calina <span className="hidden sm:inline">Advogados Associados</span>
         </a>
 
         {/* Desktop nav */}
