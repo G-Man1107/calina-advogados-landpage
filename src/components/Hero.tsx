@@ -18,9 +18,7 @@ const Hero = () => {
 
         {/* Right - Text */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">
-            Registro de Marca, Recuperação de Créditos e Defesas Tributárias
-          </h1>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">Registro de Marca, Recuperação de Créditos, Execução Fiscal e Isenção de Imposto de Renda.</h1>
           <p className="mt-6 text-base text-primary-foreground/80 leading-relaxed font-light md:text-xl">
             Nosso escritório conta com ampla experiência nas áreas de registro de marca, recuperação de créditos e defesas tributárias, oferecendo soluções jurídicas personalizadas para proteger o seu patrimônio.
           </p>
