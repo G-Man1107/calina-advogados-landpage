@@ -16,7 +16,7 @@ const Sobre = () => {
   return <section id="sobre" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] md:text-5xl">Sobre o Escritório</h2>
+          <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] md:text-3xl">Sobre o Escritório</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
           <p className="text-muted-foreground leading-relaxed text-xl">
             O escritório Calina Advogados Associados atua com seriedade e dedicação
@@ -28,7 +28,7 @@ const Sobre = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {valores.map(valor => <div key={valor.titulo} className="text-center group">
+          {valores.map((valor) => <div key={valor.titulo} className="text-center group">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-primary/30 group-hover:border-primary transition-colors duration-300">
                 <valor.icon className="w-7 h-7 text-primary" strokeWidth={1.2} />
               </div>
