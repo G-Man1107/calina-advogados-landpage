@@ -1,4 +1,4 @@
-import { BookMarked, TrendingUp, FileCheck } from "lucide-react";
+import { BookMarked, TrendingUp, Landmark, ShieldCheck } from "lucide-react";
 const areas = [{
   icon: BookMarked,
   titulo: "Registro de Marca",
@@ -8,9 +8,13 @@ const areas = [{
   titulo: "Recuperação de Créditos",
   descricao: "Estratégias jurídicas eficientes para a recuperação de valores devidos, atuando de forma extrajudicial e judicial para restabelecer seus direitos financeiros."
 }, {
-  icon: FileCheck,
-  titulo: "Defesas Tributárias",
-  descricao: "Planejamento e defesa fiscal especializada, protegendo sua empresa contra cobranças indevidas e otimizando a carga tributária com segurança legal."
+  icon: Landmark,
+  titulo: "Execução Fiscal",
+  descricao: "Defesa estratégica em processos de execução fiscal, protegendo seu patrimônio contra cobranças indevidas da Fazenda Pública com atuação técnica e especializada."
+}, {
+  icon: ShieldCheck,
+  titulo: "Isenção de Imposto de Renda",
+  descricao: "Assessoria jurídica para obtenção de isenção de imposto de renda em casos previstos em lei, como doenças graves, garantindo seus direitos tributários."
 }];
 const AreasAtuacao = () => {
   return <section id="areas" className="relative -mt-16 md:-mt-24 pt-0 pb-24 md:pb-32 bg-accent z-20">
@@ -20,7 +24,7 @@ const AreasAtuacao = () => {
           <div className="w-16 h-px bg-primary mx-auto my-6" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {areas.map(area => <div key={area.titulo} className="bg-background border border-border p-8 hover:border-primary/40 transition-colors duration-300 group">
               <area.icon className="w-8 h-8 text-primary mb-6" strokeWidth={1.2} />
               <h3 className="text-xl text-foreground mb-4">{area.titulo}</h3>
