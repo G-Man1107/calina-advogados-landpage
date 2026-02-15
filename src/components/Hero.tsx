@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         {/* Photo */}
         <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-2 md:order-none md:mt-[50px] lg:mt-0">
-          <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl" />
+          <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl md:mt-[150px] lg:mt-0" />
         </div>
 
         {/* Text */}
@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="mt-4 text-sm text-primary-foreground/60 font-light tracking-wide md:text-xl">
             Entre em contato e fale conosco agora mesmo.
           </p>
-          <a className="mt-8 md:-mt-[10px] lg:mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl text-center order-1 md:order-none" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521966310195%3Ftext%3Dmensagem%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDUmoKutygQtfAzfNyVTskUKetb4w4BmC8zkptJWN_d390WLkzHIUlLWtTv8_aem_AIjdn0LWhEHtm92JIABNyw&e=AT2ceJQGN_SsPpp8Cu08FE3uKSM-1COxfUAOQ-gJCLa9f5e3rwDkG9G6BvsTsri9Fn3arCdbK7U4_p5ih832bil3SRYPeC_xTH3IP5Od2A">
+          <a className="mt-8 md:mt-[10px] lg:mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl text-center order-1 md:order-none" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521966310195%3Ftext%3Dmensagem%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDUmoKutygQtfAzfNyVTskUKetb4w4BmC8zkptJWN_d390WLkzHIUlLWtTv8_aem_AIjdn0LWhEHtm92JIABNyw&e=AT2ceJQGN_SsPpp8Cu08FE3uKSM-1COxfUAOQ-gJCLa9f5e3rwDkG9G6BvsTsri9Fn3arCdbK7U4_p5ih832bil3SRYPeC_xTH3IP5Od2A">
             Fale agora Conosco no whatsapp  
           </a>
         </div>
