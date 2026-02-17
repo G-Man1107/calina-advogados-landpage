@@ -1,4 +1,5 @@
 import { Scale, Shield, Award } from "lucide-react";
+import bernardoFrente from "@/assets/bernardo-frente.png";
 const valores = [{
   icon: Scale,
   titulo: "Ética",
@@ -15,16 +16,21 @@ const valores = [{
 const Sobre = () => {
   return <section id="sobre" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] md:text-3xl">Sobre o Escritório</h2>
-          <div className="w-16 h-px bg-primary mx-auto my-6" />
-          <p className="text-muted-foreground leading-relaxed text-xl">
-            O escritório Calina Advogados Associados atua com seriedade e dedicação
-            na prestação de serviços jurídicos de alta qualidade. Com uma equipe
-            experiente e comprometida, oferecemos soluções estratégicas e
-            personalizadas para proteger os interesses de nossos clientes, sempre
-            pautados pela ética profissional e pelo rigor técnico.
-          </p>
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 mb-16">
+          <div className="flex-shrink-0 w-48 md:w-64">
+            <img src={bernardoFrente} alt="Bernardo Calina - Advogado" className="w-full h-auto object-contain rounded" />
+          </div>
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] md:text-3xl">Sobre o Escritório</h2>
+            <div className="w-16 h-px bg-primary md:mx-0 mx-auto my-6" />
+            <p className="text-muted-foreground leading-relaxed text-xl">
+              O escritório Calina Advogados Associados atua com seriedade e dedicação
+              na prestação de serviços jurídicos de alta qualidade. Com uma equipe
+              experiente e comprometida, oferecemos soluções estratégicas e
+              personalizadas para proteger os interesses de nossos clientes, sempre
+              pautados pela ética profissional e pelo rigor técnico.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
