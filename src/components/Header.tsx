@@ -14,7 +14,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary-dark/95 backdrop-blur-sm border-b border-primary/20">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="text-primary-foreground text-xl md:text-2xl tracking-widest uppercase font-light">CALINA ADVOGADOS ASSOCIADOS
-          <span className="hidden sm:inline">Advogados Associados</span>
+          <span className="hidden sm:inline"></span>
         </a>
 
         {/* Desktop nav */}
