@@ -38,10 +38,10 @@ const Contato = () => {
               <Phone className="w-5 h-5 text-primary mt-1" />
               <p className="text-muted-foreground">(21) 96631-0195</p>
             </div>
-            <div className="flex items-start gap-3">
-              <Mail className="w-5 h-5 text-primary mt-1" />
-              <p className="text-muted-foreground">contato@exemplo.com</p>
-            </div>
+            
+
+
+
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input placeholder="Seu nome" required />
@@ -54,7 +54,7 @@ const Contato = () => {
           </form>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 export default Contato;
