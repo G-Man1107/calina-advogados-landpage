@@ -7,7 +7,7 @@ const Footer = () => {
             Calina Advogados Associados
           </p>
           <nav className="flex gap-8">
-            {["#sobre", "#areas", "#contato"].map((href, i) => (
+            {["#sobre", "#areas", "https://wa.me/5521966310195"].map((href, i) => (
               <a
                 key={href}
                 href={href}
