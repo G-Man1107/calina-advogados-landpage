@@ -13,7 +13,7 @@ const areas = [{
   descricao: "Defesa estratégica em processos de execução fiscal, protegendo seu patrimônio contra cobranças indevidas da Fazenda Pública com atuação técnica e especializada."
 }, {
   icon: ShieldCheck,
-  titulo: "Isenção de Imposto de Renda",
+  titulo: "Isenção e Restituição de Imposto de Renda",
   descricao: "Assessoria jurídica para obtenção de isenção de imposto de renda em casos previstos em lei, como doenças graves, garantindo seus direitos tributários."
 }];
 const AreasAtuacao = () => {
