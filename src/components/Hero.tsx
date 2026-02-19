@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="mt-4 text-sm text-primary-foreground/60 font-light tracking-wide md:text-xl">
             Entre em contato e fale conosco agora mesmo.
           </p>
-          <a className="mt-8 md:mt-[10px] lg:mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl text-center order-1 md:order-none font-extrabold" href="https://wa.me/5521966310195">
+          <a className="mt-8 inline-flex items-center gap-2 text-primary-foreground px-8 py-4 rounded tracking-widest uppercase transition-colors duration-300 bg-[#25d466] text-xl text-center font-extrabold" href="https://wa.me/5521966310195">
             Fale agora Conosco no whatsapp  
           </a>
         </div>
