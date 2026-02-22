@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-primary-dark/80" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 pt-24 md:pt-32">
+      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 pt-24 md:pt-32 pb-0">
         
         {/* Photo */}
         <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] md:translate-y-[80px] lg:translate-y-[35px]">
