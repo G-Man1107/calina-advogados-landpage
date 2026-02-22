@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Main content */}
       <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         {/* Photo */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-2 md:order-none md:mt-[50px] lg:mt-0">
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-12 lg:translate-y-24">
           <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl md:mt-[280px] lg:mt-0" />
         </div>
 
