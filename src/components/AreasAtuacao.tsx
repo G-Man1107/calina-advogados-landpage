@@ -17,7 +17,7 @@ const areas = [{
   descricao: "Assessoria jurídica para obtenção de isenção de imposto de renda em casos previstos em lei, como doenças graves, garantindo seus direitos tributários."
 }];
 const AreasAtuacao = () => {
-  return <section id="areas" className="relative -mt-16 md:-mt-[80px] lg:-mt-[90px] pt-12 md:pt-[80px] lg:pt-[100px] pb-24 bg-accent z-20">
+  return <section id="areas" className="relative -mt-16 md:-mt-[80px] lg:-mt-[110px] pt-12 md:pt-[80px] lg:pt-[100px] pb-24 bg-accent z-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl text-foreground mb-2 font-normal py-[20px] my-0 md:text-3xl">Áreas de Atuação</h2>
