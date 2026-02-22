@@ -13,7 +13,7 @@ const valores = [{
   descricao: "Busca contínua pela qualidade e atualização jurídica para os melhores resultados."
 }];
 const Sobre = () => {
-  return <section id="sobre" className="py-24 md:py-32 bg-background">
+  return <section id="sobre" className="pt-12 pb-24 md:pt-16 md:pb-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl text-foreground mb-2 font-normal md:text-3xl">Sobre o Escritório</h2>
