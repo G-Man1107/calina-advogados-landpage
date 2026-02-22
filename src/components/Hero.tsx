@@ -1,7 +1,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import bernardoImg from "@/assets/bernardo.png";
 const Hero = () => {
-  return <section className="relative min-h-screen flex flex-col overflow-hidden">
+  return <section className="relative min-h-[85vh] flex flex-col overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
       backgroundImage: `url(${heroBg})`
