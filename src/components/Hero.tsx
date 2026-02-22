@@ -1,7 +1,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import bernardoImg from "@/assets/bernardo.png";
 const Hero = () => {
-  return <section className="relative min-h-[70vh] lg:min-h-[75vh] flex flex-col overflow-hidden">
+  return <section className="relative min-h-[80vh] lg:min-h-[85vh] flex flex-col overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
       backgroundImage: `url(${heroBg})`
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-primary-dark/80" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 pt-24 md:pt-32 pb-0">
+      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 pt-24 md:pt-32">
         
         {/* Photo */}
         <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] md:translate-y-[80px] lg:translate-y-[35px]">
