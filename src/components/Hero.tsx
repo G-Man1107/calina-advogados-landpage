@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         
         {/* Photo */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] lg:translate-y-[35px]">
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] md:translate-y-[40px] lg:translate-y-[35px]">
           <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl md:mt-[280px] lg:mt-0" />
         </div>
 
