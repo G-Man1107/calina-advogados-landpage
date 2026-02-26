@@ -3,8 +3,8 @@ import bernardoImg from "@/assets/bernardo.png";
 
 const Hero = () => {
   return (
-    // O z-20 aqui garante que o Hero manda no layout e fica SEMPRE por cima
-    <section className="relative z-20 flex flex-col bg-primary-dark">
+    // min-h-[75vh] garante que 25% do ecrã de baixo fica livre para mostrar a secção "Áreas de Atuação"
+    <section className="relative min-h-[75vh] flex flex-col">
       
       {/* Imagem de Fundo e Camada Escura */}
       <div 
@@ -13,11 +13,12 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-primary-dark/80" />
 
-      {/* Conteúdo Principal (sem min-h para não forçar a tela a ficar gigante) */}
-      <div className="relative z-30 container mx-auto px-6 pt-24 pb-4 lg:pt-28 lg:pb-8 flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-12">
+      {/* lg:pt-[76px] respeita os 20px que pediu para subir no Desktop. */}
+      {/* lg:pb-12 dá um respiro na base para o botão não colar no fundo. */}
+      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-12 pt-[80px] lg:pt-[76px] pb-0 lg:pb-12">
         
-        {/* Foto do Advogado: translate-y empurra-o 120px para baixo, invadindo a secção seguinte de forma segura */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-[450px] relative transform translate-y-12 lg:translate-y-[120px]">
+        {/* Foto do Advogado: O translate-y faz a foto deslizar para a secção de baixo */}
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-[400px] order-last lg:order-none relative z-20 transform translate-y-[60px] md:translate-y-[80px] lg:translate-y-[100px]">
           <img 
             src={bernardoImg} 
             alt="Advogado do escritório Calina" 
@@ -25,8 +26,8 @@ const Hero = () => {
           />
         </div>
 
-        {/* Textos e Botão: lg:mb-16 dá um respiro na parte de baixo para os ecrãs grandes */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl lg:mb-16">
+        {/* Textos e Botão: pb-20 no telemóvel afasta o botão da foto */}
+        <div className="relative z-30 flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl pb-20 lg:pb-0">
           <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">
             Registro de Marca, Recuperação de Créditos, Execução Fiscal e Isenção de Imposto de Renda.
           </h1>
