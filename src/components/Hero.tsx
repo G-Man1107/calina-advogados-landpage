@@ -3,23 +3,21 @@ import bernardoImg from "@/assets/bernardo.png";
 
 const Hero = () => {
   return (
-    // REMOVIDO o overflow-hidden para a imagem poder descer sem ser cortada
-    <section className="relative min-h-[75vh] flex flex-col">
+    // O z-20 aqui garante que o Hero manda no layout e fica SEMPRE por cima
+    <section className="relative z-20 flex flex-col bg-primary-dark">
       
-      {/* Imagem de Fundo */}
+      {/* Imagem de Fundo e Camada Escura */}
       <div 
         className="absolute inset-0 bg-cover bg-center" 
         style={{ backgroundImage: `url(${heroBg})` }} 
       />
-      
-      {/* Camada Escura */}
       <div className="absolute inset-0 bg-primary-dark/80" />
 
-      {/* Conteúdo Principal (Mantivemos o seu ajuste de 20px no lg:pt-[76px]) */}
-      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 pt-20 md:pt-24 lg:pt-[76px] pb-0">
+      {/* Conteúdo Principal (sem min-h para não forçar a tela a ficar gigante) */}
+      <div className="relative z-30 container mx-auto px-6 pt-24 pb-4 lg:pt-28 lg:pb-8 flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-12">
         
-        {/* Foto do Advogado (z-30 garante que fica por cima do fundo cinzento) */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-30 transform translate-y-12 md:translate-y-[80px] lg:translate-y-[100px]">
+        {/* Foto do Advogado: translate-y empurra-o 120px para baixo, invadindo a secção seguinte de forma segura */}
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-[450px] relative transform translate-y-12 lg:translate-y-[120px]">
           <img 
             src={bernardoImg} 
             alt="Advogado do escritório Calina" 
@@ -27,8 +25,8 @@ const Hero = () => {
           />
         </div>
 
-        {/* Texto e Botão (z-40 garante que NUNCA será bloqueado por nada) */}
-        <div className="relative z-40 flex flex-col items-center md:items-start text-center md:text-left max-w-2xl pb-16 md:pb-0">
+        {/* Textos e Botão: lg:mb-16 dá um respiro na parte de baixo para os ecrãs grandes */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl lg:mb-16">
           <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">
             Registro de Marca, Recuperação de Créditos, Execução Fiscal e Isenção de Imposto de Renda.
           </h1>
