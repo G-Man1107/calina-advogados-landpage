@@ -39,9 +39,11 @@ const Hero = () => {
       </div>
 
 
-      {/* Wave curve at the bottom - rises toward the image on the right */}
-      <div className="absolute bottom-0 left-0 w-full z-10">
-        
+      {/* Call to action - desktop only */}
+      <div className="hidden md:flex absolute bottom-8 left-0 w-full z-10 container mx-auto px-6">
+        <p className="text-primary-foreground/70 text-sm tracking-wide animate-pulse">
+          ↓ Role a página para conhecer nossas áreas de atuação
+        </p>
       </div>
     </section>;
 };
