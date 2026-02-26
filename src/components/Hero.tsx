@@ -13,8 +13,39 @@ const Hero = () => {
       <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         
         {/* Photo */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] md:translate-y-[80px] lg:translate-y-[35px]">
-          <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl md:mt-[280px] lg:mt-0" />
+        <div {/* Foto do Advogado com Chamada Flutuante */}
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-20 transform translate-y-12 md:translate-y-[80px] lg:translate-y-[100px]">
+          
+          <img 
+            src={bernardoImg} 
+            alt="Advogado do escritório Calina" 
+            className="w-full h-auto object-contain drop-shadow-2xl relative z-10" 
+          />
+
+          {/* Chamada Flutuante (Desktop e Tablet) - Fica à esquerda da foto, entre o texto e o advogado */}
+          <a 
+            href="#areas" 
+            className="absolute bottom-1/3 -left-12 lg:-left-24 z-30 hidden md:flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full text-white/90 hover:bg-black/50 hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer shadow-xl group"
+          >
+            <span className="font-medium text-sm lg:text-base tracking-wide">Nossas Áreas de Atuação</span>
+            {/* Ícone de seta com animação suave ao passar o rato */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-y-1 transition-transform">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </a>
+
+          {/* Chamada Discreta (Mobile) - Fica logo abaixo da foto */}
+          <a 
+            href="#areas" 
+            className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex md:hidden items-center gap-2 text-white/80 text-sm hover:text-white transition-colors"
+          >
+            <span>Ver Áreas</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce mt-1">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </a>
+
+        </div>
         </div>
 
         {/* Text */}
