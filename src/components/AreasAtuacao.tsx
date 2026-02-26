@@ -25,15 +25,16 @@ const areas = [
 
 const AreasAtuacao = () => {
   return (
-    // REMOVIDO todos os "-mt". pt-[60px] dá um espaço agradável acima do título. z-10 para ficar atrás do advogado.
-    <section id="areas" className="relative pt-12 md:pt-[60px] pb-24 bg-accent z-10">
+    // z-10 garante que esta secção fica por BAIXO do advogado.
+    // Sem margens negativas (-mt). Ela começa logo após o Hero.
+    <section id="areas" className="relative z-10 bg-accent pt-16 lg:pt-[120px] pb-24">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 relative z-20">
+        <div className="text-center mb-16">
           <h2 className="text-4xl text-foreground mb-2 mt-0 font-normal md:text-5xl">Áreas de Atuação</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto relative z-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {areas.map((area) => (
             <div key={area.titulo} className="bg-background border border-border p-8 hover:border-primary/40 transition-colors duration-300 group">
               <area.icon className="w-8 h-8 text-primary mb-6" strokeWidth={1.2} />
