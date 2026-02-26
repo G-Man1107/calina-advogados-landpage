@@ -20,7 +20,7 @@ const AreasAtuacao = () => {
   return <section id="areas" className="relative -mt-16 md:-mt-[80px] lg:-mt-[110px] pt-4 md:pt-8 lg:pt-[40px] pb-24 bg-accent z-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl text-foreground mb-2 font-normal my-0 md:text-3xl">Áreas de Atuação</h2>
+          <h2 className="text-4xl text-foreground mb-2 font-normal my-0 md:text-4xl">Áreas de Atuação</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
         </div>
 
