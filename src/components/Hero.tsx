@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         
         {/* Photo */}
-        <div {/* Foto do Advogado com Chamada Flutuante */}
+       {/* Foto do Advogado com Chamada Flutuante */}
         <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-20 transform translate-y-12 md:translate-y-[80px] lg:translate-y-[100px]">
           
           <img 
@@ -45,7 +45,6 @@ const Hero = () => {
             </svg>
           </a>
 
-        </div>
         </div>
 
         {/* Text */}
