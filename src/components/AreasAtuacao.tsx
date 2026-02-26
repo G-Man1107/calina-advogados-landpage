@@ -25,16 +25,16 @@ const areas = [
 
 const AreasAtuacao = () => {
   return (
-    // z-10 garante que esta secção fica por BAIXO do advogado.
-    // Sem margens negativas (-mt). Ela começa logo após o Hero.
-    <section id="areas" className="relative z-10 bg-accent pt-16 lg:pt-[120px] pb-24">
+    // Não há mais margens negativas (-mt). A secção começa normalmente.
+    // pt-[120px] dá espaço seguro para a foto do advogado não tocar no título.
+    <section id="areas" className="relative bg-accent pt-[100px] lg:pt-[120px] pb-24 z-0">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 relative z-10">
           <h2 className="text-4xl text-foreground mb-2 mt-0 font-normal md:text-5xl">Áreas de Atuação</h2>
           <div className="w-16 h-px bg-primary mx-auto my-6" />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto relative z-10">
           {areas.map((area) => (
             <div key={area.titulo} className="bg-background border border-border p-8 hover:border-primary/40 transition-colors duration-300 group">
               <area.icon className="w-8 h-8 text-primary mb-6" strokeWidth={1.2} />
