@@ -3,7 +3,6 @@ import bernardoImg from "@/assets/bernardo.png";
 
 const Hero = () => {
   return (
-    // Estrutura intacta: sem restrições de altura, layout fluído.
     <section className="relative z-20 flex flex-col bg-primary-dark">
       
       {/* Imagem de Fundo e Camada Escura */}
@@ -40,37 +39,53 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Lado Direito: Foto do Advogado com o Botão Instagram Flutuante */}
+        {/* Lado Direito: Foto do Advogado e Chamada Instagram */}
         <div className="w-64 md:w-80 lg:w-[45%] max-w-[500px] relative z-40 -mb-16 lg:-mb-[120px]">
           
-          {/* BOTÃO DO INSTAGRAM - POSICIONAMENTO EXATO NO RETÂNGULO LARANJA */}
-          {/* md:top-[38%] alinha verticalmente com o espaço vazio. lg:-left-[260px] joga o botão para fora da imagem, caindo no espaço entre o texto e o advogado */}
-          {/* whitespace-nowrap impede que o texto do botão quebre e estrague o layout */}
+          {/* ========================================== */}
+          {/* BOTÃO DO INSTAGRAM (DESKTOP) - CONTROLE MANUAL */}
+          {/* ========================================== */}
           <a 
             href="https://www.instagram.com/calinaadvogados/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="absolute -top-4 left-1/2 -translate-x-1/2 md:translate-x-0 md:top-[40%] md:left-auto md:-left-[180px] lg:-left-[260px] z-50 flex items-center gap-2.5 bg-black/40 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full text-white/90 hover:bg-black/60 hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer shadow-xl group whitespace-nowrap"
+            className="hidden md:flex items-center gap-2.5 bg-black/40 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full text-white/90 hover:bg-black/60 hover:text-white hover:scale-105 transition-all duration-300 shadow-xl group z-50"
+            style={{
+              position: 'absolute',
+              // CONTROLE PARA CIMA/BAIXO: Aumente o valor (ex: 45%) para descer o botão. Diminua (ex: 30%) para subir.
+              top: '38%', 
+              
+              // CONTROLE PARA ESQUERDA/DIREITA: Aumente o valor (ex: 90%) para empurrar mais para a esquerda. Diminua (ex: 70%) para trazer para a direita (perto do advogado).
+              right: '82%', 
+              
+              // Impede que o texto quebre em duas linhas
+              whiteSpace: 'nowrap'
+            }}
           >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="18" 
-              height="18" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              className="text-white/90"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
               <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
             </svg>
-            <span className="font-medium text-xs lg:text-sm tracking-wide">Nos siga no Instagram @calinaadvogados</span>
+            <span className="font-medium text-sm tracking-wide">Nos siga no Instagram @calinaadvogados</span>
           </a>
 
+          {/* Botão Mobile (Fica acima da cabeça na versão de celular) */}
+          <a 
+            href="https://www.instagram.com/calinaadvogados/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="md:hidden absolute -top-8 left-1/2 transform -translate-x-1/2 flex items-center gap-2 bg-black/40 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-white/90 z-50 whitespace-nowrap"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span className="font-medium text-xs tracking-wide">@calinaadvogados</span>
+          </a>
+
+          {/* FOTO */}
           <img 
             src={bernardoImg} 
             alt="Advogado do escritório Calina" 
