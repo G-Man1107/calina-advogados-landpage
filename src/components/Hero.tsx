@@ -28,7 +28,7 @@ const Hero = () => {
           
           <a 
   className="mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 rounded tracking-widest uppercase transition-all duration-300 bg-[#25D366] hover:bg-[#128C7E] text-white text-xl text-center font-bold shadow-lg hover:scale-105" 
-  href="https://wa.me/5521970786776"
+  href="https://wa.me/5521966310195"
   target="_blank"
   rel="noopener noreferrer"
 >
