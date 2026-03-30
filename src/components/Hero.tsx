@@ -1,56 +1,48 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import bernardoImg from "@/assets/bernardo.png";
-
 const Hero = () => {
-  return (
-    // O z-20 aqui garante que o Hero manda no layout e fica SEMPRE por cima
-    <section className="relative z-20 flex flex-col bg-primary-dark">
-      
-      {/* Imagem de Fundo e Camada Escura */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center" 
-        style={{ backgroundImage: `url(${heroBg})` }} 
-      />
+  return <section className="relative min-h-[80vh] flex flex-col overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 bg-cover bg-center" style={{
+      backgroundImage: `url(${heroBg})`
+    }} />
+      {/* Overlay */}
       <div className="absolute inset-0 bg-primary-dark/80" />
 
-      {/* Conteúdo Principal (sem min-h para não forçar a tela a ficar gigante) */}
-      <div className="relative z-30 container mx-auto px-6 pt-24 pb-4 lg:pt-28 lg:pb-8 flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-12">
+      {/* Main content */}
+      <div className="relative z-10 flex-1 container mx-auto px-6 flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-12 py-24 md:py-32">
         
-        {/* Foto do Advogado: Removemos translate-y-12 e translate-y-[120px] para subir a foto */}
-        <div className="flex-shrink-0 w-64 md:w-80 lg:w-[450px] relative transform translate-y-0 lg:translate-y-0">
-          <img 
-            src={bernardoImg} 
-            alt="Advogado do escritório Calina" 
-            className="w-full h-auto object-contain drop-shadow-2xl" 
-          />
+        {/* Photo */}
+        <div className="flex-shrink-0 w-64 md:w-80 lg:w-96 order-last md:order-none relative z-10 transform translate-y-[32px] md:translate-y-[80px] lg:translate-y-[35px]">
+          <img src={bernardoImg} alt="Advogado do escritório Calina" className="w-full h-auto object-contain drop-shadow-2xl md:mt-[280px] lg:mt-0" />
         </div>
 
-        {/* Textos e Botão: lg:mb-16 dá um respiro na parte de baixo para os ecrãs grandes */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl lg:mb-16">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">
-            Registro de Marca, Recuperação de Créditos, Execução Fiscal e Isenção de Imposto de Renda.
-          </h1>
-          
-          <p className="mt-6 text-base text-primary-foreground/80 leading-relaxed font-light md:text-xl">
-            Nosso escritório conta com ampla experiência nas áreas de registro de marca, recuperação de créditos e defesas tributárias no geral, oferecendo soluções jurídicas personalizadas para proteger o seu patrimônio.
-          </p>
-          
+        {/* Text */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight font-semibold">Registro de Marca, Recuperação de Créditos, Execução Fiscal e Isenção de Imposto de Renda.</h1>
+          <p className="mt-6 text-base text-primary-foreground/80 leading-relaxed font-light md:text-xl">Nosso escritório conta com ampla experiência nas áreas de registro de marca, recuperação de créditos e defesas tributárias no geral, oferecendo soluções jurídicas personalizadas para proteger o seu patrimônio.
+        </p>
           <p className="mt-4 text-sm text-primary-foreground/60 font-light tracking-wide md:text-xl">
             Entre em contato e fale conosco agora mesmo.
           </p>
-
+          
           <a 
-            className="mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 rounded tracking-widest uppercase transition-all duration-300 bg-[#25D366] hover:bg-[#128C7E] text-white text-xl text-center font-bold shadow-lg hover:scale-105" 
-            href="https://wa.me/5521966310195"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fale Conosco Agora no WhatsApp
-          </a>
+  className="mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 rounded tracking-widest uppercase transition-all duration-300 bg-[#25D366] hover:bg-[#128C7E] text-white text-xl text-center font-bold shadow-lg hover:scale-105" 
+  href="https://wa.me/5521970786776"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Fale Conosco Agora no WhatsApp
+</a>
+        
         </div>
       </div>
-    </section>
-  );
-};
 
+
+      {/* Wave curve at the bottom - rises toward the image on the right */}
+      <div className="absolute bottom-0 left-0 w-full z-10">
+        
+      </div>
+    </section>;
+};
 export default Hero;
